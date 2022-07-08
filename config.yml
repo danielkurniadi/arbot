@@ -1,0 +1,23 @@
+exchanges:
+  # Binance: https://binance-docs.github.io/
+  - name: "binance"
+    testing: true
+    fees: 0.001 # maker/taker: 0.1%
+    apiAccessKey: "bKrrmuw4UI4FmrEjBy76FnOYRwfaG314EDvL6kFGsFsWKttpr6x9psBpwOEkSNTm"
+    apiSecretKey: "dyrgLyovljQtonUpqTglGauDUwzfvMAD7LwH6lEHVCu7CrneOH7sqLLrH0qLQjmi"
+  # 1inch: https://docs.1inch.io/docs/
+  - name: "1inch"
+    testing: true
+    fees: 0.0020 # swap: ~0.2%
+# List of strategies to run.
+strategies:
+  - name: "BTCCrossExchangeOnePair"
+    debug: true # notify all event logs
+    interval: "5s"
+    tradingPair: "BTC-USDT"
+    slipage: 0.0010
+  - name: "ETHCrossExchangeOnePair"
+    debug: true # notify all event logs
+    interval: "5s"
+    tradingPair: "ETH-USDT"
+    slipage: 0.005
