@@ -22,6 +22,7 @@ WORKDIR /home
 
 EXPOSE 8080
 
+COPY --from=builder /home/config.yml .
 COPY --from=builder /home/arbot .
 
 CMD ["./arbot"]

@@ -10,8 +10,8 @@ clean:
 	if [ -f ${BINARY} ] ; then rm ${BINARY} ; fi
 
 run-server: ## Starts docker containers for local development.
-	docker-compose up -d --build
-	@echo Running taxi-sim development server
+	docker-compose up --build
+	@echo Running arbot development server
 
 stop-server: 
 	docker-compose down
