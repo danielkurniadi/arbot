@@ -2,6 +2,8 @@
 
 Arbitrage bot for simple Cefi-Defi live arbitrage opportunity detection tool.
 
+[![Sample](./docs/sample.png)](#)
+
 # Table of contents
 
 - [Getting Started](#getting-started)
