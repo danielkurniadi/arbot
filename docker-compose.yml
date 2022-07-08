@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  # Arbot service
+  arbot:
+    image: arbot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - arbot-network
+    expose:
+      - 8080
+    
+networks:
+  arbot-network:
+    driver: bridge
